@@ -9,7 +9,7 @@ $apiName = $name
 
 if($apiName -eq $null -or $apiName -eq "") {
     do {
-        write-host "[x] API name is mandatory either Provide the API Name or use [Ctrl + C] to exit and run the script with .\MedisysWebAPIGenerator.ps1 -name <Web.API.Name>" -ForegroundColor Red
+        write-host "[x] API name is mandatory either Provide the API Name or use [Ctrl + C] to exit and run the script with .\WebAPIGenerator.ps1 -name <Web.API.Name>" -ForegroundColor Red
         $apiName = Read-Host "Enter the API name"
     } until ($apiName -ne "")
 
